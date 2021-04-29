@@ -1,2 +1,2 @@
 # LADA
-Repositorio para bots de discords y otras cosas
+Repositorio del bot de discord de los archivos de arkham
