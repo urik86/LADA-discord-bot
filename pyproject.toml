@@ -2,7 +2,7 @@
 name = "lada-discord-bot"
 version = "0.1.0"
 description = ""
-authors = ["urielmiralles <<>>"]
+authors = ["urik <<>>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
