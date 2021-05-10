@@ -49,30 +49,4 @@ async def _caos(ctx):
   await ctx.send('Sacando un token de la bolsa del caos...')
   await channel.send(resultado)
 
-@bot.command(name='test')
-async def _test(ctx):
-  colorsenior = 0x3e55e4
-  colormayor = 0xc2182b
-  colorjunior = 0x337731
-  colorsupremo = 0xf1c40f
-  colorgeneral = 0x2f3136
-  channel = bot.get_channel(834443569279664128)
-  #rolname = ctx.author.roles[1].name
-  rolname = 'Mayor'
-  if rolname == 'Senior':
-    colorrol = colorsenior
-  elif rolname == 'Mayor':
-    colorrol = colormayor
-  elif rolname == 'Junior':
-    colorrol = colorjunior
-  elif rolname == 'Supremo':
-    colorrol = colorsupremo
-  else:
-    colorrol = colorgeneral
-
-  embed = discord.Embed (color=colorrol, title=f'Un nuevo archivero {rolname} se ha unido a la investigación' , description=f'Dad una buena bienvenida a {ctx.author.mention}!!')
-  embed.set_thumbnail(url = ctx.author.avatar_url)
-  await channel.send(embed=embed)
-
-
 bot.run(os.getenv('TOKEN'))
